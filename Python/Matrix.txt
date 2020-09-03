@@ -1,0 +1,1 @@
+Matrices don't exactly exist in python. You can use numpy to achieve the same results or use some smart methods to make sudo matrices.
