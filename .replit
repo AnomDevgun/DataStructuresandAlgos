@@ -1,2 +1,2 @@
 language = "python3"
-run = "python Python/HelloRepl.py"
+run = "python Python/Nemo.py"
