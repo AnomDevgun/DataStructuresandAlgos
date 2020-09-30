@@ -1,3 +1,2 @@
 language = "python3"
-run = "python TestingfromRepl.py"
-[![Run on Repl.it](https://repl.it/badge/github/AnomDevgun/DataStructuresandAlgos)](https://repl.it/github/AnomDevgun/DataStructuresandAlgos)
+run = "python Python/Nemo.py"
