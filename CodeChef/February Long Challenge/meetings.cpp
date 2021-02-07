@@ -4,3 +4,12 @@ Li to a time Ri (both inclusive). For each friend, can you help Chef find out
 if this friend will be able to attend the meeting? More formally, 
 check if Li≤P≤Ri for each valid i */
 
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout<<"Hello World!";
+    return 0;
+}
