@@ -1,6 +1,8 @@
 //You are given a sequence A1,A2,…,AN. Find the maximum value of the expression 
 //|Ax−Ay|+|Ay−Az|+|Az−Ax| over all triples of pairwise distinct valid indices (x,y,z)
 
+//TODO: Fails with WA on CodeChef
+
 #include <iostream>
 #include <cstdlib>
 

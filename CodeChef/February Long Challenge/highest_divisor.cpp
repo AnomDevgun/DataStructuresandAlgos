@@ -1,3 +1,6 @@
+// You are given an integer N. Find the largest integer between 1 and 10 
+// (inclusive) which divides N.
+
 #include <iostream>
 
 using namespace std;
