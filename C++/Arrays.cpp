@@ -5,9 +5,10 @@ using namespace std;
 
 
 class MyArray{
+	private:
+		int currPos;
+		int data[100];
 	public:
-	int currPos;
-	int data[100];
 	MyArray(){
 		this->currPos = 0;
 	}
@@ -29,6 +30,13 @@ class MyArray{
 			cout<<"Element popped, array size now: "<<this->currPos<<"\n";
 		}
 	}
+	void print(){
+		int i = 0;
+		for (i=0;i<this->currPos;i++){
+			cout<<this->data[i]<<" ";
+		}
+		cout<<"\n";
+	}
 };
 
 int main()
@@ -40,7 +48,7 @@ int main()
 	while (true){
 		cout<<"1)Push element into array.\n";
 		cout<<"2)Pop element from array.\n";
-		cout<<"3)Display length of array.\n";
+		cout<<"3)Print the array elements.\n";
 		cin>>e;
 		switch(e){
 			case 1:
@@ -53,6 +61,9 @@ int main()
 				break;
 			case 2:
 				newArray.pop();
+				break;	
+			case 3:
+				newArray.print();
 				break;	
 		}
 	}
