@@ -4,13 +4,24 @@
 
 class Hash{
 	int* hashitems;
+	int size;
 	public:
 		Hash(int size){
 			this->hashitems = (int *)malloc(size*sizeof(int));
+			this->size = size;
+			for(int i=0;i<this->size;i++){
+				this->hashitems[i]=-1;
+			}
 		}
 		 set(std::string item,int num){
 			int addr = this->hashIndex(item);
+			//Deal with collisions.
+			if(this->hashitems[addr]==-1)
 			this->hashitems[addr] = num;
+			for(int i=0;i<this->size;i++){
+				std::cout<<this->hashitems[i]<<" ";
+			}
+			std::cout<<"\n";
 		}
 		
 		print(std::string item){
@@ -38,5 +49,8 @@ int main(){
 	obj.print("anoma");
 	obj.set("kartik",21);
 	obj.print("kartik");
+	//Testing collision
+	obj.set("anoma",40);
+	obj.print("anoma");
 	obj.freememory();
 }
